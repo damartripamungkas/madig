@@ -1,1 +1,500 @@
-<!DOCTYPE html><html translate="no"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="light"><meta name="docsearch:language" content="id"><meta name="description" content="madig"><meta name="author" content="damartripamungkas"><title>madig</title><link rel="stylesheet" href="./assets/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><script src="./assets/js/bootstrap.bundle.min.js"></script><script src="./assets/js/sweetalert2.all.min.js"></script><script src="./assets/js/script.js"></script><style>html{height:100%!important}.no-padding-card{padding-right:0!important;padding-left:0!important;padding-top:0!important;padding-bottom:0!important}.no-border-radius{border-radius:0!important}.no-border-top-lr-radius{border-top-left-radius:0!important;border-top-right-radius:0!important}.no-border-width{border-width:0!important}.no-underline-href{text-decoration:none}.font-h1-responsive{font-size:calc(1.5em + 1vmin)}.font-h4-responsive{font-size:calc(1em + 1vmin)}.font-h5-responsive{font-size:calc(.8em + 1vmin)}.font-h6-responsive{font-size:calc(.6em + 1vmin)}.font-h7-responsive{font-size:calc(.5em + 1vmin)}.font-bold{font-weight:700}.font-serif{font-family:serif}.font-color-black-grey{color:rgba(0,0,0,.568)}.font-color-black-grey-2{color:rgba(0,0,0,.522)}.font-article-text{font-family:Arial,Helvetica,sans-serif;font-size:calc(.78em + 1vmin);color:rgba(0,0,0,.686)}.bg-color-primary{background-color:#d5382FFE}.bg-main-content{background-color:rgba(0,0,0,.09)}.navbar-brand-style{font-family:serif;font-style:italic}div.scrollmenu{background-color:#d5382FFE;overflow:auto;white-space:nowrap}div.scrollmenu a{display:inline-block;color:#fff;text-align:center;padding:.5rem!important;text-decoration:none}div.scrollmenu a:hover{background-color:rgba(179,73,67,.996)}</style></head><body><nav id="html-header-menu" class="navbar bg-color-primary sticky-top"><div class="container-fluid pb-3 text-white"><span class="material-icons" onclick="renderMenuSidebar()">menu</span><div class="navbar-brand-style font-h1-responsive" onclick="redirectToHome()">MADIG</div><span class="material-icons" onclick="renderMenuSearch()">search</span></div><div class="container-fluid"><div class="scrollmenu"></div></div></nav><div id="html-main-content" class="bg-main-content"></div><div id="html-menu-search" style="display:none"><div class="container-fluid sticky-top pt-3 pb-3 bg-white"><div class="row d-flex justify-content-center align-items-center"><div class="col-1"><span class="material-icons pt-2" onclick="renderHome()">arrow_back</span></div><div class="col-11"><input type="text" width="100" class="form-control" placeholder="Cari..." oninput="renderMenuSearchInput(this.value)"></div></div></div><div class="card no-border-width" width="100" height="100"><div class="card-body no-padding-card"><div class="card-text font-bold font-h5-responsive ps-3 pe-3">Terpopuler</div><div id="html-menu-search-sub-1" class="ps-3 pe-3"></div></div></div></div><div id="html-main-content-click" style="display:none"><nav class="navbar bg-color-primary sticky-top"><div class="container-fluid text-white"><span class="material-icons text-start" onclick="renderHome()">arrow_back</span><div class="font-h5-responsive font-bold">Politik & Hukum</div><div class="ps-2"></div><div class="text-end d-flex align-items-center justify-content-center"><span class="material-icons">format_size</span><div class="ps-2"></div><span class="material-icons" onclick='textToSpeech(document.getElementById("html-main-content-click-sub-1-text").children[0].textContent)'>volume_up</span><div class="ps-2"></div><span class="material-icons">share</span></div></div></nav><div class="pt-3"><div class="card no-border-width"><div class="card-body no-padding-card"><div id="html-main-content-click-sub-1-title" class="pt-1 pb-1 ps-3 pe-3"><h5 class="font-bold font-serif">title</h5><p class="pt-1 font-color-black-grey">spoiler</p><p class="font-color-black-grey font-h6-responsive">Oleh: ADMINISTRATOR • 26-10-2021 13:08 WIB</p></div><div id="html-main-content-click-sub-1-image-and-deskripsi" class="pt-1 pb-3"><img src="#" class="card-img-top no-border-top-lr-radius" style="height:210px"><h5 class="pt-1 ps-3 pe-3 font-color-black-grey-2 font-h7-responsive">image description</h5></div><div id="html-main-content-click-sub-1-text" class="ps-3 pe-3"><p class="font-article-text">text article</p></div></div></div></div></div><script lang="text/javascript">renderHeaderMenu(),renderMainContent("beritapanas"),setScrollDocument(0)</script></body></html>
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="light">
+    <meta name="docsearch:language" content="id">
+    <meta name="description" content="madig">
+    <meta name="author" content="damartripamungkas">
+    <title>madig</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- <script src="https://code.responsivevoice.org/responsivevoice.js?key=QibokRPs"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <style>
+        html {
+            height: 100% !important;
+        }
+
+        body {
+            /* height: 100% !important;
+            position: relative; */
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .no-padding-card {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .no-margin-row {
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+
+        .no-border-radius {
+            border-radius: 0 !important;
+        }
+
+        .no-border {
+            border: 0 !important;
+        }
+
+        .no-border-top-lr-radius {
+            border-top-left-radius: 0 !important;
+            border-top-right-radius: 0 !important;
+        }
+
+        .no-border-width {
+            border-width: 0 !important;
+        }
+
+        .no-underline-href {
+            text-decoration: none;
+        }
+
+        .font-h1-responsive {
+            font-size: calc(1.5em + 1vmin);
+        }
+
+        .font-h4-responsive {
+            font-size: calc(1em + 1vmin);
+        }
+
+        .font-h5-responsive {
+            font-size: calc(0.8em + 1vmin);
+        }
+
+        .font-h6-responsive {
+            font-size: calc(0.6em + 1vmin);
+        }
+
+        .font-h7-responsive {
+            font-size: calc(0.5em + 1vmin);
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .font-serif {
+            font-family: 'serif';
+        }
+
+        .font-color-black-grey {
+            color: rgba(0, 0, 0, 0.568);
+        }
+
+        .font-color-black-grey-2 {
+            color: rgba(0, 0, 0, 0.522);
+        }
+
+        .font-magazine-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: calc(0.78em + 1vmin);
+            color: rgba(0, 0, 0, 0.686);
+        }
+
+        .bg-color-light-mode {
+            background-color: #D5382FFE;
+        }
+
+        .bg-color-dark-mode {
+            background-color: #212529;
+        }
+
+        .bg-color-light-mode-main {
+            background-color: rgba(0, 0, 0, 0.034);
+        }
+
+        .bg-color-dark-mode-main {
+            background-color: #212529;
+        }
+
+        .navbar-brand-style {
+            font-family: 'serif';
+            font-style: italic;
+        }
+
+        div.scrollmenu {
+            overflow: auto;
+            white-space: nowrap;
+        }
+
+        div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 0.5rem !important;
+            margin-right: 0.3rem !important;
+            text-decoration: none;
+        }
+
+        div.scrollmenu a:hover {
+            background-color: #b24742;
+            border-radius: var(--bs-border-radius-lg) !important;
+        }
+
+        .top-container {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .top-container-img {
+            width: 100%;
+            height: auto !important;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-color-light-mode-main">
+    <nav id="html-header-menu" class="navbar bg-color-light-mode sticky-top">
+        <div class="container-fluid text-white">
+            <span class="material-icons" onclick="renderMenuSidebar()">menu</span>
+            <div class="navbar-brand-style font-h1-responsive" onclick="redirectToHome()">MADIG</div>
+            <span class="material-icons" onclick="renderMenuSearch()">search</span>
+        </div>
+        <div class="pt-3 container-fluid">
+            <div class="scrollmenu"></div>
+        </div>
+    </nav>
+
+    <div id="html-slide-main-content">
+        <!-- isi dengan content berbeda dengan html-main-content -->
+        <div class="container-fluid pt-3 ps-3 pe-3">
+            <div class="card shadow-sm no-border">
+                <div class="card-body no-padding-card mt-3 mb-3 me-2 ms-2">
+                    <div class="overflow-auto row flex-row flex-nowrap g-3">
+                        <!-- <div class="col-4">
+                            <div class="card">
+                                <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/3.jpg"
+                                    class="rounded img-fluid" alt="..." style="height: 170px; max-height: 170px;">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                                    class="rounded img-fluid" alt="..." style="height: 170px; max-height: 170px;">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/3.jpg"
+                                    class="rounded img-fluid" alt="..." style="height: 170px; max-height: 170px;">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                                    class="rounded img-fluid" alt="..." style="height: 170px; max-height: 170px;">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="html-main-content"></div>
+
+    <div id="html-menu-search" style="display: none; height: 100%;">
+        <div class="container-fluid sticky-top pt-2 pb-2 bg-white">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-1">
+                    <span class="material-icons pt-2" onclick="renderHome()">arrow_back</span>
+                </div>
+                <div class="col-11">
+                    <input type="text" width="100" class="form-control" placeholder="Cari..."
+                        oninput="renderMenuSearchInput(this.value)">
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="card no-border shadow-sm p-3 m-3 rounded">
+            <div class="card-body"> 
+            <div class=" font-bold font-h5-responsive">
+                Terpopuler
+            </div>
+            </div>
+        </div> -->
+
+
+        <!-- <div class="pt-3 ps-3 pe-3 pb-3">
+            <div class="row g-2">
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Menuju KTT G20, Bali Menggeliat Lagi L..</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 3.9</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/8.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Kisah Seorang Remaja</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 4.4</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/9.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Sekolah Tidak Jelas Di Surabaya</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 5.0</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Menuju KTT G20, Bali Menggeliat Lagi L..</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 3.9</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/8.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Kisah Seorang Remaja</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 4.4</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100 no-border shadow-sm">
+                        <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/9.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-h6-responsive">Sekolah Tidak Jelas Di Surabaya</h5>
+                        </div>
+                        <div class="pe-4 card-footer bg-white d-flex align-items-center justify-content-center">
+                            <small class="font-bold">⭐ 5.0</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="pt-1 pb-1 ps-1 pe-1 bg-white">
+            <div id="html-menu-search-1" class="row g-1">
+                <!-- <div class="col-4">
+                    <div class="row g-1">
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/1.jpg"
+                                class="w-100" style="min-height: 150px; max-height: 150px;" />
+                        </div>
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/6.jpg"
+                                class="w-100" style="min-height: 250px; max-height: 250px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row g-1">
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/10.jpg"
+                                class="w-100" style="min-height: 250px; max-height: 250px;" />
+                        </div>
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/2.jpg"
+                                class="w-100" style="min-height: 150px;max-height: 150px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="row g-1">
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/2.jpg"
+                                class="w-100" style="min-height: 150px; max-height: 150px;" />
+                        </div>
+                        <div class="col-12">
+                            <img src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                                class="w-100" style="min-height: 250px; max-height: 250px;" />
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="html-menu-search-1" class="bg-color-light-mode-main" style="min-height: 100vh;"></div>
+    </div>
+
+    <div id="html-main-content-click" style="display: none;">
+        <nav class="navbar bg-color-light-mode sticky-top">
+            <div class="container-fluid text-white">
+                <span class="material-icons text-start" onclick="renderHome()">arrow_back</span>
+                <div id="html-main-content-click-1" class="font-h6-responsive font-bold"></div>
+                <div class="ps-5 ms-5"></div>
+                <div class="ps-5 ms-4"></div>
+            </div>
+        </nav>
+
+        <div class="p-3">
+            <div class="card shadow-sm no-border">
+                <div class="card-body">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img id="html-main-content-click-2"
+                                src="https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/7.jpg"
+                                class="img-fluid rounded" style="max-width: 120px; min-width: 120px; min-height: 100%;">
+                        </div>
+                        <div class="col-8 ps-5">
+                            <div class="row g-2">
+                                <div class="col-12">
+                                    <h4 id="html-main-content-click-2" class="font-bold"></h4>
+                                </div>
+                                <div class="col-12">
+                                    <div id="html-main-content-click-2" class="font-h5-responsive text-muted"></div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="html-main-content-click-2" class="font-h5-responsive text-muted"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 card shadow-sm no-border">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4 text-center pt-3">
+                            <p id="html-main-content-click-3" class="font-h4-responsive font-bold"></p>
+                            <p id="html-main-content-click-3" class="font-h5-responsive font-bold"></p>
+                        </div>
+                        <div class="col-4 text-center pt-3">
+                            <p id="html-main-content-click-3" class="font-h4-responsive font-bold"></p>
+                            <p class="font-h5-responsive font-bold">halaman</p>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <button id="html-main-content-click-3"
+                                class="btn btn-lg bg-color-light-mode text-white rounded-3">
+                                Baca
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 card shadow-sm no-border">
+                <div class="card-body">
+                    <h5 class="card-title font-bold font-h5-responsive">
+                        Spoiler Isi Madig
+                    </h5>
+                    <div id="html-main-content-click-4" class="card-text font-h6-responsive"></div>
+                </div>
+            </div>
+
+            <div class="mt-3 card shadow-sm no-border">
+                <div class="card-body">
+                    <h5 class="card-title font-bold font-h5-responsive">
+                        Rating Dan Ulasan
+                    </h5>
+                    <h3 id="html-main-content-click-5" class="pt-3 ps-3 card-text font-bold"></h3>
+                    <div class="pt-4" id="html-main-content-click-5"></div>
+                    <div id="html-main-content-click-5" class="pt-3 d-flex align-items-center justify-content-center">
+                        <!-- <div class="btn btn-sm text-white bg-color-light-mode"></div> -->
+                    </div>
+
+                    <p class="pt-4 font-h5-responsive font-bold">Beri rating madig ini</p>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-2">
+                            <h1 id="html-main-content-click-5">⭐</h1>
+                        </div>
+                        <div class="col-2">
+                            <h1 id="html-main-content-click-5">⭐</h1>
+                        </div>
+                        <div class="col-2">
+                            <h1 id="html-main-content-click-5">⭐</h1>
+                        </div>
+                        <div class="col-2">
+                            <h1 id="html-main-content-click-5">⭐</h1>
+                        </div>
+                        <div class="col-2">
+                            <h1 id="html-main-content-click-5">⭐</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="html-main-content-click-baca" style="display: none;">
+        <nav class="navbar bg-color-light-mode sticky-top">
+            <div id="html-main-content-click-baca-1" class="container-fluid text-white">
+                <span class="material-icons text-start" onclick="">arrow_back</span>
+                <div class="font-h6-responsive font-bold"></div>
+                <div class="ps-5 ms-5"></div>
+                <div class="ps-5 ms-4"></div>
+            </div>
+        </nav>
+
+        <div class="p-1">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade shadow-lg rounded">
+                <div id="html-main-content-click-baca-2" class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
+                <div id="html-main-content-click-baca-2" class="carousel-inner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Selanjutnya</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="html-footer-menu" class="pt-3" style="background-color: transparent;"></div> -->
+
+    <script lang="text/javascript">
+        renderHeaderMenu();
+        renderMainContent("untuk_anda");
+        renderSlideMainContent();
+        // setScrollDocument(0);
+    </script>
+</body>
+
+</html>

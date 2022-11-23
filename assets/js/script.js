@@ -1,114 +1,273 @@
 let struct_obj = {
     pathread: "",
     scroll: {
-        home: 0 // example = 1 
+        home: 0 // example = 1
     },
     lastvalue: {
-        sidebar: "", // example = "1" 
+        sidebar: "", // example = "1"
     },
-    texttospeech: false, // example = false 
-    maincontentmenu: "", // example = "beritapanas", "terpopuler"  
-    articles: {
-        beritapanas: [
+    texttospeech: false, // example = false
+    magazines_kategori: ["Politik & Hukum", "Opini", "Logic", "History"], // example = ["Politik & Hukum", "Opini", "Logic", "History"]
+    magazines_headline: ["untuk_anda", "terpopuler", "terbaru"], // example = ["terbaru", "terpopuler", "untuk_anda"]
+    magazines_headline_select: "", // example = "terbaru", "terpopuler"
+    magazines: {
+        untuk_anda: [
             {
-                image: "https://media.suara.com/pictures/653x366/2022/03/22/62168-indonesia-masuk-g20-g20org.jpg",
-                title: "[beritapanas1] Sebanyak 17 kepala negara menyatakan siap datang ke KTT G20",
-                spoiler: "Sebanyak 17 kepala negara menyatakan siap datang ke KTT G20. Dibayang-bayangi kemungkinan",
-                waktu: "26-10-2021 13:08 WIB",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/1.jpg",
+                title: "Refleksi Resolusi",
+                spoiler: "Resolusi Tentang Lingkungan Sekitar",
+                waktu: "01-01-2022 01:00 WIB",
                 kategori: "Politik & Hukum",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://media.suara.com/pictures/653x366/2022/03/22/62168-indonesia-masuk-g20-g20org.jpg",
-                    image_deskripsi: "negara negara yang ikut berpatisipasi dalam KTT G20 di bali, indonesia",
-                    text: `SURABAYA, MADIG __ Sehari sebelum pelaksanaan Konferensi Tingkat Tinggi (KTT) G20, para kepala negara dan kepala pemerintahan berdatangan di Bali. Dua pemimpin negara besar dunia yang tiba antara lain Presiden Cina Xi Jinping dan Perdana Menteri Inggris Rishi Sunak."Semua lancar,tidak ada yang melenceng dari jadwal yang sudah ditetapkan," kata Direktur Jenderal Informasi dan Komunikasi Publik Kementerian Komunikasi dan Informatika (IKP) Usman Kansong, kepada Tim Komunikasi dan Media, Senin (14/11/2022). Presiden Xi Jinping mendarat di Ngurah Rai sekitar pukul 15.45 WITA diikuti oleh Perdana Menteri Kanada Justin Trudeau. Sementara Perdana Menteri Inggris Rishi Sunak tiba pukul 18.46 WITA.Sebelum kedatangan tiga kepala pemerintahan di atas beberapa kepala negara dan kepala pemerintahan anggota G20 lainnya juga telah tiba, antara lain Presiden Prancis Emmanuel Macron, Perdana Menteri Australia Anthony Albanese, Presiden Argentina Alberto Fernandez, Presiden Afrika Selatan Cyril Ramaphosa, Presiden Turki Recep Tayyip Erdogan, dan Perdana Menteri Italia Giorgia Meloni.Sementara kepala negara yang menjadi undangan KTT G20 juga beberapa tiba di hari yang sama. Antara lain Presiden Senegal Macky Sall, Presiden Suriname Chandrikapersad Santokhi, Perdana Menteri Kamboja Hun Sen, Presiden Persatuan Emirat Arab Sheikh Mohamed bin Zayed Al Nahyan, dan Presiden Spanyol Pedro Sanchez.Dalam waktu yang hampir bersamaan juga tiba pimpinan lembaga dunia seperti Sekretaris Jenderal PBB Antonio Guterres, Direktur Pelaksana IMF Kristalina Georgieva, Presiden Uni Eropa Charles Michel, Direktur Jenderal WTO Ngozi Okonjo-Iweala, dan Direktur Jenderal WHO Tedros Adhanom Ghebreyesus.Pemimpin negara anggota G20 lainnya yang masih ditunggu kehadirannya; Kanselir Jerman Olaf Scholz, Perdana Menteri India Narendra Damodardas Modi dan Perdana Menteri Saudi Arabia Mohammad bin Salman bin Abdulaziz Al Saud.Kedatangan ketiganya akan memenuhi 17 dari 20 kepala negara anggota G20 yang telah mengonfirmasi kehadirannya di KTT G20.  “Itu hal yang wajar karena pada setiap penyelenggaraan KTT selalu ada negara yang berhalangan hadir dengan berbagai alasan,” kata Usman.Sehari sebelumnya sebagain delegasi sudah hadir antara lain Presiden Amerika Serikat Joe Biden, Presiden Korea Selatan Yoon Suk-yeol, Presiden ADB Masatsugu Asakawa, Ketua WEF Klaus Martin Schwab, Presiden IsDB Muhammad Sulaiman Al Jasser, Direktur Jenderal ILO Gilbert F. Houngbo, Menteri Luar Negeri Mexico Marcelo Ebrard Casaubon, serta Menteri Urusan Luar Negeri Rusia Sergey Lavrov.`,
-                }
+                penerbit: "Peter Paker",
+                rating: "4.1",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/1.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                    {
+                        nama: "Zoe Amstrong",
+                        rating: "2",
+                    },
+                    {
+                        nama: "Alexander Braham",
+                        rating: "3",
+                    },
+                ]
             },
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[beritapanas2] Menuju KTT G20, Bali Menggeliat Lagi",
-                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/2.jpg",
+                title: "Informasi Sehat Dan Cerdas",
+                spoiler: "Informasi Sehat Dan Masyarakat Cerdas Yang Pandai Membedakan Hoax Dan Kebenaran",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "Logic",
+                penerbit: "Zoe Biden",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/2.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
+            },
+            {
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/3.jpg",
+                title: "Memandu Pelayanan Publik Lebih Baik",
+                spoiler: "Memandu Pelayan Publik Lebih Baik Untuk Daerah Terpencil Terutama Pelosok Yang Tidak Bisa Di Akses Oleh Kendaraan Biasa",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "Logic",
+                penerbit: "Abraham Smith",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/3.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
+            },
+            {
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/4.jpg",
+                title: "Kisah Dewa Janus",
+                spoiler: "Kisah Dewa Janus Yang Melayani Setulus Hati Yang Memiliki Wajah Bermuka Dua",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "History",
+                penerbit: "Jaki Chan",
+                rating: "2.1",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/4.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "2",
+                    },
+                ]
+            },
+            {
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/5.jpg",
+                title: "Pembangunan Infrastruktur Kota Bogor",
+                spoiler: "Banyak Sekali Daerah Bogor Terpencil Yang Masih Membutuhkan Infrastruktur Yang Memadai Terutama Daerah Selatan",
                 waktu: "26-10-2021 13:08 WIB",
                 kategori: "Opini",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
-            },
-            {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[beritapanas3] Menuju KTT G20, Bali Menggeliat Lagi",
-                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
-                waktu: "26-10-2021 13:08 WIB",
-                kategori: "Ekonomi",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
-            },
+                penerbit: "Rizki Rama",
+                rating: "3.9",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/5.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "3",
+                    },
+                    {
+                        nama: "Zoe Amstrong",
+                        rating: "4",
+                    },
+                ]
+            }
         ],
         terpopuler: [
             {
                 image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[terpopuler] Menuju KTT G20, Bali Menggeliat Lagi",
+                title: "Justin Bieber Hard Work",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
                 kategori: "Politik & Hukum",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
+                penerbit: "Joe Amstrong",
+                rating: "5.0",
+                views: [
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                ],
+                comments: [
+                    {
+                        nama: "Zoe Amstrong",
+                        rating: "2",
+                    },
+                    {
+                        nama: "Alexander Braham",
+                        rating: "3",
+                    },
+                    {
+                        nama: "Bill Gates",
+                        rating: "1",
+                    },
+                ]
+            },
+            {
+                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                title: "Justin Bieber Hard Work",
+                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "Politik & Hukum",
+                penerbit: "Joe Amstrong",
+                rating: "5.0",
+                views: [
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                ],
+                comments: [
+                    {
+                        nama: "Zoe Amstrong",
+                        rating: "2",
+                    },
+                    {
+                        nama: "Alexander Braham",
+                        rating: "3",
+                    },
+                    {
+                        nama: "Bill Gates",
+                        rating: "1",
+                    },
+                ]
             },
         ],
         terbaru: [
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[terbaru] Menuju KTT G20, Bali Menggeliat Lagi",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/18.jpg",
+                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
-                kategori: "Politik & Hukum",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
+                kategori: "Opini",
+                penerbit: "Peter Paker",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/17.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
             },
-        ],
-        terviral: [
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[terviral] Menuju KTT G20, Bali Menggeliat Lagi",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/16.jpg",
+                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
-                kategori: "Politik & Hukum",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
+                kategori: "Opini",
+                penerbit: "Peter Paker",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/16.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
             },
-        ],
-        terasik: [
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                title: "[terasik] Menuju KTT G20, Bali Menggeliat Lagi",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/15.jpg",
+                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
-                kategori: "Politik & Hukum",
-                view: {
-                    penerbit: "ADMINISTRATOR",
-                    image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    image_deskripsi: "president joko widodo di KTT G20 osaka, jepang",
-                    text: `SURABAYA, MADIG __ Indonesia akan memimpin Presidensi G20 pada 2022. Presiden RI Joko Widodo (Jokowi) menekankan bahwa momentum ini harus dimanfaatkan untuk memberikan pelayanan dan menampilkan yang terbaik dari Indonesia selaku tuan rumah ajang internasional tersebut.Hal ini disampaikan Presiden Jokowi usai meninjau sejumlah lokasi yang akan digunakan dalam Konferensi Tingkat Tinggi (KTT) G20 pada 2022, di Nusa Dua, Bali, Jumat (8/10/2021). "Kita juga harus dapat memanfaatkan pelaksanaan KTT G20 ini sebagai showcase mengenai kemampuan negara kita, Indonesia, dalam mengendalikan pandemi Covid-19, baik dari sisi kesehatan maupun dari sisi ekonomi," ujarnya.Kepala Negara menambahkan, dalam Presidensi G20 untuk pertama kalinya ini Indonesia juga akan menampilkan kemajuan-kemajuan yang telah dicapai. Tak hanya itu, Indonesia juga akan menampilkan kekayaan budaya bangsa. "Kita juga ingin menampilkan kemajuan-kemajuan Indonesia yang telah kita capai dan juga showcase untuk kekayaan budaya bangsa yang majemuk, yang sangat beragam, dan sekaligus kita juga ingin menunjukkan leadership Indonesia dalam Presidensi G20 nantinya," tukas Jokowi.Bagi Presiden, penunjukan Bali sebagai tuan rumah KTT G20 ini tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.Oleh karena itu, Kepala Negara saat kunjungan kerja ke Bali, sekaligus meninjau kawasan The Nusa Dua yang memiliki Bali International Convention Center (BICC) serta sejumlah hotel kelas bintang lima. Kawasan ini kerap dijadikan tuan rumah konferensi internasional. Perhelatan akbar dunia yang pernah dihelat di Nusa Dua adalah Annual Meeting IMF-World Bank Group pada 2018.Meski agenda besar tersebut baru akan digelar pada November 2022, Kepala Negara juga meminta agar semua pihak mulai dari pemerintah pusat, pemerintah daerah, hingga masyarakat Bali dapat terus bekerja sama dalam mengendalikan Covid-19 menjelang gelaran pertemuan G20 tersebut. Apalagi seluruh kepala negara dan pemerintah dari negara-negara G20 bakal hadir di Bali.Sejauh ini, Bali mengalami penurunan kasus SARS COV2 yang signifikan. Hampir 95 persen menurun dari jumlah kasus pada Agustus 2021. Sedangkan, jumlah masyarakat Bali yang menerima vaksinasi dosis pertama sudah mencapai 98 persen, dosis kedua sebanyak 80 persen.Kondisi demikian membuat pemerintah setahap demi setahap melonggarkan pembatasan kegiatan di Pulau Dewata ini. Seperti keputusan membuka kembali penerbangan internasional di Bandara I Gusti Ngurah Rai, Bali, pada 14 Oktober 2021. Pembukaan penerbangan internasional ini merupakan bagian dari upaya membuka kembali aktivitas ekonomi Bali. Pembukaan aktivitas ekonomi Bali ini sangatlah penting mengingat sumber utama penghasilan masyarakat berasal dari sektor pariwisata.Pada masa pandemi ini, wisatawan yang datang ke Bali sangat menurun jumlahnya. Tercatat, jumlah wisatawan asing menurun hingga 97 persen, jumlah wisatawan nusantara menurun 27 persen, dan tingkat hunian kamar hotel di bawah 20 persen. Selain itu, Presiden Jokowi meminta agar pengalaman-pengalaman negara lain dalam menghadapi Covid-19 turut dipelajari oleh pemerintah Bali dan para pelaku pariwisata setempat, termasuk pentingnya disiplin menjalankan protokol kesehatan.Dalam kesempatan sebelumnya, Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menambahkan, posisi Indonesia selaku Presidensi G20 diperkirakan dapat memberikan manfaat ekonomi yang lebih besar dibandingkan saat Indonesia menjadi tuan rumah International Monetary Fund (IMF)-World Bank Annual Meeting di Nusa Dua, Bali, tahun 2018 lalu.Presidensi G20 Indonesia akan dimulai 1 Desember 2021 hingga 30 November 2022. Sejak forum ini dibentuk pada 1999, tongkat estafet presidensi ini merupakan kali pertama akan diterima oleh Indonesia. Dalam presidensi ini, Indonesia akan mengusung tema “Recover Together, Recover Stronger” atau “Pulih Bersama, Bangkit Bersama”."Diharapkan, secara agregat ini akan beberapa kali, sekitar 1,5--2 kali, daripada efek yang dicapai dalam pertemuan IMF-World Bank di 2018 yang lalu. Sebab pertemuan ini berjalan sekitar 150 pertemuan selama satu tahun atau selama 12 bulan," ungkap Menko Airlangga.Selain itu, tambah Airlangga, pertemuan ini juga dapat dijadikan momentum bagi Indonesia untuk menampilkan keberhasilan reformasi struktural berupa dikeluarkannya Undang-Undang Cipta Kerja dan Lembaga Pengelola Investasi (Sovereign Wealth Fund/SWF).Sementara itu, dari aspek pembangunan sosial, Indonesia berpeluang untuk mendorong topik terkait dengan produksi dan distribusi vaksin.Bali sudah berpengalaman memegang event-event kelas dunia. Mereka memiliki fasilitas, infrastruktur yang amat memadai. Kawasan The Nusa Dua memiliki kelengkapan akomodasi lebih dari 5.000 kamar hotel dan fasilitas meeting, incentive, convention, exhibition (MICE) yang dapat menampung lebih dari 20.000 delegasi.BICC merupakan salah satu venue MICE terbesar dan terlengkap di Bali, yang menyediakan antara lain dua hall utama dengan kapasitas masing-masing 2.500 dan 1.500 peserta, area pameran seluas 2.700m2, auditorium dengan kapasitas 500 kursi dan built-in stage, serta hampir 26 ruang rapat.  BICC juga terkoneksi dengan The Westin Resort Nusa Dua Bali yang menyediakan 433 kamar.Gedung BICC memiliki lokasi yang strategis dengan jarak sekitar 30 kilometer dari Kota Denpasar dan 10 kilometer dari Bandara Internasional Ngurah Rai.Saat ini, BICC tengah mempersiapkan tiga turnamen bulutangkis internasional. Adapun masing-masing jadwal pelaksanaaan dari ketiga turnamen tersebut dimulai dari Indonesia Masters yang berlangsung pada tanggal 16--21 November, dilanjut Indonesia Open pada 23--28 November, dan terakhir ditutup dengan BWF World Tour Finals 2021 pada tanggal 1--5 Desember.Meski begitu, tiga turnamen badminton tersebut dilakukan dengan standar protokol kesehatan ketat. Pertama, pertandingan dilaksanakan tanpa penonton. Kedua, panitia turnamen menerapkan bubble system bagi seluruh atlet, ofisial, wasit, dan perangkat pertandingan dalam satu kawasan Nusa Dua.Setidaknya event-event internasional yang digelar di Bali pada penghujung 2021 dapat menjadi pembuktian bagi dunia, wilayah ini sudah aman untuk dikunjungi. Sekaligus sebagai pemanasan menuju gelaran KTT G20.`,
-                }
+                kategori: "Opini",
+                penerbit: "Peter Paker",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/15.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
             },
+            {
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/14.jpg",
+                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
+                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "Opini",
+                penerbit: "Peter Paker",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/14.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
+            },
+            {
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/13.jpg",
+                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
+                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
+                waktu: "26-10-2021 13:08 WIB",
+                kategori: "History",
+                penerbit: "Peter Paker",
+                rating: "5.0",
+                views: [
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/13.jpg",
+                ],
+                comments: [
+                    {
+                        nama: "Billy Jake",
+                        rating: "5",
+                    },
+                ]
+            }
         ]
     }
 };
@@ -145,10 +304,36 @@ const disableTextToSpeech = () => {
 const renderHome = () => {
     setScrollDocument(struct_obj.scroll.home);
     disableTextToSpeech();
+    if (struct_obj.magazines_headline[0] == struct_obj.magazines_headline_select) {
+        console.log(struct_obj.magazines_headline[0], struct_obj.magazines_headline_select)
+        document.getElementById("html-slide-main-content").style.display = "";
+    }
     document.getElementById("html-header-menu").style.display = "";
     document.getElementById("html-main-content").style.display = "";
     document.getElementById("html-menu-search").style.display = "none";
     document.getElementById("html-main-content-click").style.display = "none";
+    document.getElementById("html-main-content-click-baca").style.display = "none";
+};
+
+const renderSlideMainContent = () => {
+    // recomendasi headline "terbaru";
+    setScrollDocument(0);
+    const getId = document.getElementById("html-slide-main-content");
+    const forMagazines = document.getElementById("html-slide-main-content").children[0].children[0].children[0].children[0];
+    const magazines = struct_obj.magazines.terbaru;
+    const lengthMagazines = magazines.length;
+    forMagazines.innerHTML = "";
+    for (let index = 0; index < lengthMagazines; index++) {
+        const { image } = magazines[index];
+        forMagazines.innerHTML += `
+                        <div class="col-4">
+                            <div class="card" onclick="renderClickArticle(${index}, 'terbaru')">
+                                <img src="${image}" class="rounded img-fluid" alt="..." style="height: 170px; max-height: 170px;">
+                            </div>
+                        </div>
+        `;
+    }
+    getId.style.display = "";
 };
 
 const renderMenuSearch = () => {
@@ -156,90 +341,227 @@ const renderMenuSearch = () => {
     document.getElementById("html-main-content").style.display = "none";
     document.getElementById("html-header-menu").style.display = "none";
     document.getElementById("html-main-content-click").style.display = "none";
+    document.getElementById("html-slide-main-content").style.display = "none";
     document.getElementById("html-menu-search").style.display = "";
-    const menuArticle = "terpopuler";
-    const menuArticleUpperCaseFirst = menuArticle.slice(0, 1).toUpperCase() + menuArticle.slice(1);
-    const article = struct_obj.articles[menuArticle];
-    const lengthArticle = article.length;
-    const getid1 = document.getElementById("html-menu-search").children[0].children[0].children[1];
-    const getid2 = document.getElementById("html-menu-search").children[1].children[0];
-    const getidSub1 = document.getElementById("html-menu-search-sub-1");
-    getid1.children[0].value = "";
-    getid2.children[0].textContent = menuArticleUpperCaseFirst;
-    getidSub1.innerHTML = "";
 
-    for (let index = 0; index < lengthArticle; index++) {
-        const element = article[index];
-        getidSub1.innerHTML = getidSub1.innerHTML + `
-                    <div class="pt-4 card no-border-width">
-                        <div class="card-body no-padding-card" onclick="renderClickArticle(0, '${menuArticle}')">
-                            <div class="row">
-                                <div class="col-8">
-                                    <p class="font-bold font-h6-responsive">${element.title}</p>
-                                    <p class="font-color-black-grey-2 font-h7-responsive">${element.waktu} • ${element.kategori}</p>
-                                </div>
-                                <div class="col-4">
-                                    <img src="${element.image}" class="card-img-top no-border-top-lr-radius" style="height: 100px;">
-                                </div>
+    const getId1 = document.querySelectorAll(`[id="html-menu-search-1"]`);
+    getId1[0].innerHTML = "";
+
+    const getCountRight = (value = 0, target = 6) => {
+        if ((value / target).toString().includes(".") === true) {
+            if (value >= target) {
+                for (let index = value; index > target; index--) {
+                    const resMath = index / target;
+                    if (resMath.toString().includes(".") === false) {
+                        return index;
+                    }
+                }
+            } else {
+                return 0;
+            }
+        } else {
+            return value;
+        }
+    };
+
+    let newMagazines = [];
+    let valueLengthNewMagazines = 0;
+    struct_obj.magazines_headline.forEach((it) => {
+        const magazines = struct_obj.magazines[it].map((it2) => { it2.headline = it; return it2; });
+        valueLengthNewMagazines += magazines.length;
+        newMagazines = newMagazines.concat(magazines);
+    });
+
+    valueLengthNewMagazines = getCountRight(valueLengthNewMagazines, 6); // harus kelipatan 6 length nya jika tidak maka akan di decrement
+
+    if (valueLengthNewMagazines != 0) {
+        for (let index = 0; index < valueLengthNewMagazines; index++) {
+            const { image, headline } = newMagazines[index];
+            const tmp = (index / 2).toString().includes("."); // jika length 1 maka render atas nya begitu sebaliknya render bawahnya
+            if (tmp === false) {
+                getId1[0].innerHTML += `
+                    <div class="col-4">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <img src="${image}" onclick="renderClickArticle(${index}, '${headline}')" class="img-fluid" style="min-height 150px; max-height: 150px;" />
+                            </div>
+                            <div class="col-12">
+                                <img src="${image}" onclick="renderClickArticle(${index + 1}, '${headline}')" class="img-fluid" style="min-height: 250px; max-height: 250px;" />
                             </div>
                         </div>
                     </div>`;
+            } else {
+                getId1[0].innerHTML += `
+                    <div class="col-4">
+                        <div class="row g-1">
+                            <div class="col-12">
+                                <img src="${image}" onclick="renderClickArticle(${index}, '${headline}')" class="img-fluid" style="min-height: 250px; max-height: 250px;" />
+                            </div>
+                            <div class="col-12">
+                                <img src="${image}" onclick="renderClickArticle(${index + 1}, '${headline}')" class="img-fluid" style="min-height 150px; max-height: 150px;" />
+                            </div>
+                        </div>
+                    </div>`;
+            }
+        }
     }
 };
 
 const renderMenuSearchInput = (text = "") => {
     setScrollDocument(0);
+    const getId1 = document.querySelectorAll(`[id="html-menu-search-1"]`);
+    getId1[1].innerHTML = "";
     if (text.length == 0) {
+        getId1[0].style.display = "";
         renderMenuSearch();
     } else {
-        text = text.toLowerCase();
         let temporary = [];
-        const getid = document.getElementById("html-menu-search").children[1].children[0];
-        const menuNameArticle = Object.keys(struct_obj.articles);
-        const lengthMenuNameArticle = menuNameArticle.length;
-        for (let index = 0; index < lengthMenuNameArticle; index++) {
-            const element = menuNameArticle[index];
-            const isFound = struct_obj.articles[element].filter((it) => it.title.toLowerCase().includes(text));
+        text = text.toLowerCase();
+        getId1[0].style.display = "none";
+
+        // const getid = document.getElementById("html-menu-search").children[1].children[0];
+        const headlineMagazine = struct_obj.magazines_headline;
+        const lengthHeadlineMagazine = headlineMagazine.length;
+
+        for (let index = 0; index < lengthHeadlineMagazine; index++) {
+            const element = headlineMagazine[index];
+            const isFound = struct_obj.magazines[element].filter((it) => it.title.toLowerCase().includes(text));
             if (isFound.length != 0) {
-                const addObj = isFound.map((it) => { it.menuarticle = element; return it; });
+                const addObj = isFound.map((it) => { it.headline = element; return it; });
                 temporary = temporary.concat(addObj);
             }
 
-            if ((index + 1) == lengthMenuNameArticle) {
-                const menuArticle = getid.children[0];
-                const article = getid.children[1];
+            if ((index + 1) == lengthHeadlineMagazine) {
                 if (temporary.length != 0) {
-                    menuArticle.innerHTML = "";
-                    article.innerHTML = "";
                     temporary.forEach((it, index) => {
-                        article.innerHTML = article.innerHTML + `
-                            ${index == 0 ? `<div class="pt-3"></div>` : `
-                                <div class="pt-4 pb-4">
-                                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom"></div>
-                                </div>
-                            `}
-
-                            <div class="card no-border-width">
-                                <div class="card-body no-padding-card" onclick="renderClickArticle(${it.index}, '${it.menuarticle}')">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <p class="font-bold font-h6-responsive">${it.title}</p>
-                                            <p class="font-color-black-grey-2 font-h7-responsive">${it.waktu} • ${it.kategori}</p>
-                                        </div>
-                                        <div class="col-4">
-                                            <img src="${it.image}" class="card-img-top no-border-top-lr-radius" style="height: 100px;">
+                        getId1[1].innerHTML += `
+                                <div class="pt-3 ps-3 pe-3 ${index + 1 == temporary.length ? "pb-3" : ""}">
+                                    <div class="card shadow-sm no-border" style="max-height: 140px;">
+                                        <div class="row g-0" onclick="renderClickArticle(${it.index}, '${it.headline}')">
+                                            <div class="col-4">
+                                                <img src="${it.image}" class="img-fluid rounded-start h-100" alt="..." style="max-height: 138px; max-width: 110px;">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title font-h5-responsive">${it.title.length >= 32 ? it.title.slice(0, 32) + ".." : it.title}</h5>
+                                                    <p class="card-text font-h6-responsive">${it.penerbit}</p>
+                                                    <p class="card-text text-start font-h6-responsive font-bold" style="position: absolute; bottom: 8px; right: 11;">⭐ ${it.rating}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            `;
+                        `;
+
+                        // magazine.innerHTML = magazine.innerHTML + `
+                        //     ${index == 0 ? `<div class="pt-3"></div>` : `
+                        //         <div class="pt-4 pb-4">
+                        //             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center border-bottom"></div>
+                        //         </div>
+                        //     `}
+
+                        //     <div class="card no-border-width">
+                        //         <div class="card-body no-padding-card" onclick="renderClickArticle(${it.index}, '${it.headline}')">
+                        //             <div class="row">
+                        //                 <div class="col-8">
+                        //                     <p class="font-bold font-h6-responsive">${it.title}</p>
+                        //                     <p class="font-color-black-grey-2 font-h7-responsive">${it.waktu} • ${it.kategori}</p>
+                        //                 </div>
+                        //                 <div class="col-4">
+                        //                     <img src="${it.image}" class="card-img-top no-border-top-lr-radius" style="height: 100px;">
+                        //                 </div>
+                        //             </div>
+                        //         </div>
+                        //     </div>
+                        //     `;
                     });
                 } else {
-                    menuArticle.innerHTML = "";
-                    article.innerHTML = "";
+                    getId1[1].innerHTML = "";
                 }
             }
         }
+    }
+};
+
+const renderModalInputComment = async (rating = 5) => {
+    const { isConfirmed, value } = await Swal.fire({
+        title: 'RATING',
+        html:
+            `<input id="swal-input-1" class="form-control mb-3" value="nama kamu">` +
+            `<select id="swal-input-2" class="form-select">
+                <option value="5" ${rating == 5 ? "selected" : ""}>⭐⭐⭐⭐⭐</option>
+                <option value="4" ${rating == 4 ? "selected" : ""}>⭐⭐⭐⭐</option>
+                <option value="3" ${rating == 3 ? "selected" : ""}>⭐⭐⭐</option>
+                <option value="2" ${rating == 2 ? "selected" : ""}>⭐⭐</option>
+                <option value="1" ${rating == 1 ? "selected" : ""}>⭐</option>
+            </select>`,
+        confirmButtonText: "Ok",
+        cancelButtonText: "Batal",
+        confirmButtonColor: "#D5382FFE",
+        showCancelButton: true,
+        preConfirm: () => [document.getElementById('swal-input-1').value, document.getElementById('swal-input-2').value]
+    });
+
+    if (isConfirmed === true) {
+        const [nama, _rating] = value;
+        const listComments = document.querySelectorAll(`[id="html-main-content-click-5"]`)[1];
+        listComments.innerHTML = `
+            <div class="p-2">
+                <div class="pb-1 font-h6-responsive">
+                    <img class="me-2 rounded-circle" width="30" height="30" src="./assets/images/logo/person.png" style="max-width: 30; max-height: 30;">
+                    ${nama}
+                </div>
+                <div class="font-h6-responsive">${"⭐".repeat(_rating)}</div>
+            </div>` + listComments.innerHTML;
+        Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 1300,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        }).fire({ icon: 'success', title: 'Berhasil Memberi Rating' });
+        setScrollDocument(0);
+    }
+};
+
+const renderClickArticleBaca = (index = 0, menu = "") => {
+    setScrollDocument(0);
+    document.getElementById("html-header-menu").style.display = "none";
+    document.getElementById("html-main-content").style.display = "none";
+    document.getElementById("html-menu-search").style.display = "none";
+    document.getElementById("html-slide-main-content").style.display = "none";
+    document.getElementById("html-main-content-click").style.display = "none";
+    document.getElementById("html-main-content-click-baca").style.display = "";
+
+    const getId1 = document.querySelectorAll(`[id="html-main-content-click-baca-1"]`);
+    const getId2 = document.querySelectorAll(`[id="html-main-content-click-baca-2"]`);
+
+    const { comments, image, kategori, penerbit, rating, spoiler, title, views } = struct_obj.magazines[menu][index];
+    const lengthViews = views.length;
+
+    getId1[0].innerHTML = `
+        <span class="material-icons text-start" onclick="renderClickArticle('${index}', '${menu}')">arrow_back</span>
+        <div class="font-h6-responsive font-bold">${menu.toUpperCase().replaceAll("_", " ")}</div>
+        <div class="ps-5 ms-5"></div>
+        <div class="ps-5 ms-4"></div>
+    `;
+
+    getId2[0].innerHTML = "";
+    getId2[1].innerHTML = "";
+    for (let index = 0; index < lengthViews; index++) {
+        const element = views[index];
+        getId2[0].innerHTML += `
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" ${index == 0 ? `class="active" aria-current="true"` : ``}></button>
+        `;
+        getId2[1].innerHTML += `
+            <div class="carousel-item ${index == 0 ? "active" : ""}">
+                <img src="${element}" class="img-fluid w-100 rounded" alt="..." style="min-height: 93vh; max-height: 90vh; z-index:1; ">
+            </div>
+        `;
     }
 };
 
@@ -248,155 +570,169 @@ const renderClickArticle = (index = 0, menu = "") => {
     document.getElementById("html-header-menu").style.display = "none";
     document.getElementById("html-main-content").style.display = "none";
     document.getElementById("html-menu-search").style.display = "none";
-    const article = struct_obj.articles[menu][index];
-    const getid = document.getElementById("html-main-content-click");
-    const areaContent = getid.children[1].children[0].children[0];
-    const titleArea = areaContent.children[0].children;
-    const imageAndDesc = areaContent.children[1].children;
-    const textArea = areaContent.children[2].children;
-    getid.children[0].children[0].children[1].textContent = article.kategori;
-    titleArea[0].textContent = article.title;
-    titleArea[1].textContent = article.spoiler;
-    titleArea[2].textContent = `Oleh: ${article.view.penerbit} • ${article.waktu}`;
-    imageAndDesc[0].src = article.view.image;
-    imageAndDesc[1].textContent = article.view.image_deskripsi;
-    textArea[0].textContent = article.view.text;
-    setScrollDocument(0);
-    document.getElementById("html-main-content-click").style.display = "";
-};
+    document.getElementById("html-slide-main-content").style.display = "none";
+    document.getElementById("html-main-content-click-baca").style.display = "none";
 
-const renderMainContent = (menu = "") => {
-    if (struct_obj.maincontentmenu == menu) {
-        setScrollDocument(0);
-    } else {
-        struct_obj.maincontentmenu = menu;
-        const listarticles = struct_obj.articles[menu];
-        const lengthListArticles = listarticles.length;
-        const getid = document.getElementById("html-main-content");
-        getid.children.length != 0 ? getid.innerHTML = "" : null;
-        for (let index = 0; index < lengthListArticles; index++) {
-            const element = listarticles[index];
-            const htmlContent = `
-            ${index == 0 ? `<div>` : `<div class="pt-1">`}
-                <div class="card no-border-radius no-border-width" width="100">
-                    <div class="card-body no-padding-card" onclick="renderClickArticle(${index}, '${menu}')">
-                        <img src="${element.image}"
-                            class="card-img-top no-border-top-lr-radius" style="height: 210px;">
-                        <div class="p-3">
-                            <h5 class="card-title font-bold font-serif">${element.title}</h5>
-                            <p class="card-text pt-1 pb-1 font-color-black-grey">${element.spoiler}</p>
-                        </div>
-                        <div class="ps-3 pe-3">
-                            <p class="font-color-black-grey-2 font-h6-responsive">${element.waktu} • ${element.kategori}</p>
-                        </div>
-                    </div>
+    const getIdMain = document.getElementById("html-main-content-click");
+    const getIdMain1 = document.querySelectorAll(`[id="html-main-content-click-1"]`);
+    const getIdMain2 = document.querySelectorAll(`[id="html-main-content-click-2"]`);
+    const getIdMain3 = document.querySelectorAll(`[id="html-main-content-click-3"]`);
+    const getIdMain4 = document.querySelectorAll(`[id="html-main-content-click-4"]`);
+    const getIdMain5 = document.querySelectorAll(`[id="html-main-content-click-5"]`);
+
+    const { comments, image, kategori, penerbit, rating, spoiler, title, views } = struct_obj.magazines[menu][index];
+    const lengthComments = comments.length;
+
+    getIdMain1[0].textContent = menu.toUpperCase().replaceAll("_", " "); // navbar title
+
+    getIdMain2[0].src = image; // main title image
+    getIdMain2[1].textContent = title; // main title title
+    getIdMain2[2].textContent = penerbit; // main title penerbit
+    getIdMain2[3].textContent = kategori; // main title kategori
+
+    getIdMain3[0].textContent = `⭐ ${rating}`;
+    getIdMain3[1].textContent = `${comments.length} ulasan`;
+    getIdMain3[2].textContent = views.length;
+    getIdMain3[3].setAttribute("onclick", `renderClickArticleBaca(${index}, '${menu}')`);
+
+    getIdMain4[0].textContent = spoiler;
+
+    getIdMain5[0].textContent = `⭐ ${rating}`;
+
+    lengthComments == 0 ? getIdMain5[1].innerHTML = "" : null;
+    getIdMain5[1].children != 0 ? getIdMain5[1].innerHTML = "" : null;
+    const limitComments = 4; // limit target di kurang 1 karena array
+    for (let index = 0; index < lengthComments; index++) {
+        const { nama, rating } = comments[index];
+        getIdMain5[1].innerHTML += `
+            <div class="p-2">
+                <div class="pb-1 font-h6-responsive">
+                    <img class="me-2 rounded-circle" width="30" height="30" src="./assets/images/logo/person.png" style="max-width: 30; max-height: 30;">
+                    ${nama}
                 </div>
-            </div>`;
-            getid.innerHTML = getid.innerHTML + htmlContent;
+                <div class="font-h6-responsive">${"⭐".repeat(rating)}</div>
+            </div>
+        `;
+        if (index == limitComments) {
+            break; // limit menampilkan 5 comment saja 
         }
     }
+
+    getIdMain5[2].innerHTML = lengthComments > limitComments ? `<div class="btn btn-sm text-white bg-color-light-mode">Lihat Semua (${lengthComments})</div>` : "";
+    getIdMain5[2].setAttribute("onclick", "redirectToHome()"); // lihat semua data onclick
+    getIdMain5[3].setAttribute("onclick", "renderModalInputComment(1)"); // bintang 1
+    getIdMain5[4].setAttribute("onclick", "renderModalInputComment(2)"); // bintang 2
+    getIdMain5[5].setAttribute("onclick", "renderModalInputComment(3)"); // bintang 3
+    getIdMain5[6].setAttribute("onclick", "renderModalInputComment(4)"); // bintang 4
+    getIdMain5[7].setAttribute("onclick", "renderModalInputComment(5)"); // bintang 5
+    setScrollDocument(0);
+    getIdMain.style.display = "";
 };
 
-const renderMainContentWithFilterKategori = (kategori = "") => {
-    // example kategori = "Ekonomi"
-    setScrollDocument(0);
+const renderMainContent = (headline = "") => {
+    struct_obj.magazines_headline_select == headline ? setScrollDocument(0) : null;
+    struct_obj.magazines_headline_select = headline;
+    struct_obj.magazines_headline[0] == headline ? renderSlideMainContent() : document.getElementById("html-slide-main-content").style.display = "none";
+    document.getElementById("html-main-content-click-baca").style.display = "none";
+    const listmagazines = struct_obj.magazines[headline];
+    const lengthListmagazines = listmagazines.length;
     const getid = document.getElementById("html-main-content");
-    const arrTxtHeadline = Object.keys(struct_obj.articles);
-    const lengthArrTxtHeadline = arrTxtHeadline.length;
     getid.children.length != 0 ? getid.innerHTML = "" : null;
-    for (let index = 0; index < lengthArrTxtHeadline; index++) {
-        const element = arrTxtHeadline[index];
-        const arrHeadline = struct_obj.articles[element];
-        const newArticles = arrHeadline.filter((it) => it.kategori == kategori);
-        newArticles.forEach((it, index) => {
-            const htmlContent = `
-                    ${index == 0 ? `<div>` : `<div class="pt-1">`}
-                        <div class="card no-border-radius no-border-width" width="100">
-                            <div class="card-body no-padding-card" onclick="renderClickArticle(${index}, '${element}')">
-                                <img src="${it.image}"
-                                    class="card-img-top no-border-top-lr-radius" style="height: 210px;">
-                                <div class="p-3">
-                                    <h5 class="card-title font-bold font-serif">${it.title}</h5>
-                                    <p class="card-text pt-1 pb-1 font-color-black-grey">${it.spoiler}</p>
-                                </div>
-                                <div class="ps-3 pe-3">
-                                    <p class="font-color-black-grey-2 font-h6-responsive">${it.waktu} • ${it.kategori}</p>
+    for (let index = 0; index < lengthListmagazines; index++) {
+        const { title, penerbit, image: magazineImage, rating: magazineRating } = listmagazines[index];
+        const magazineTitle = title.length >= 40 ? title.slice(0, 38) + ".." : title;
+        const magazinePenerbit = penerbit.length >= 22 ? penerbit.slice(0, 20) + ".." : penerbit;
+        const htmlContent = `<div class="pt-3 ps-3 pe-3 ${index + 1 == lengthListmagazines ? "pb-3" : ""}">
+                            <div class="card shadow-sm no-border" style="max-height: 140px;">
+                                <div class="row g-0" onclick="renderClickArticle(${index}, '${headline}')">
+                                    <div class="col-4">
+                                        <img src="${magazineImage}" class="img-fluid rounded-start h-100" alt="..." style="max-height: 138px; max-width: 110px;">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-h5-responsive">${magazineTitle}</h5>
+                                            <p class="card-text font-h6-responsive">${magazinePenerbit}</p>
+                                            <p class="card-text text-start font-h6-responsive font-bold" style="position: absolute; bottom: 8px; right: 11;">⭐ ${magazineRating}</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>`;
-            getid.innerHTML = getid.innerHTML + htmlContent;
-        })
+                        </div>`;
+        getid.innerHTML = getid.innerHTML + htmlContent;
     }
+};
 
-    // const listarticles = struct_obj.articles[menu];
-    // const lengthListArticles = listarticles.length;
-    // const getid = document.getElementById("html-main-content");
-    // getid.children.length != 0 ? getid.innerHTML = "" : null;
-    // for (let index = 0; index < lengthListArticles; index++) {
-    //     const element = listarticles[index];
-    //     const htmlContent = `
-    //     ${index == 0 ? `<div>` : `<div class="pt-1">`}
-    //         <div class="card no-border-radius no-border-width" width="100">
-    //             <div class="card-body no-padding-card" onclick="renderClickArticle(${index}, '${menu}')">
-    //                 <img src="${element.image}"
-    //                     class="card-img-top no-border-top-lr-radius" style="height: 210px;">
-    //                 <div class="p-3">
-    //                     <h5 class="card-title font-bold font-serif">${element.title}</h5>
-    //                     <p class="card-text pt-1 pb-1 font-color-black-grey">${element.spoiler}</p>
-    //                 </div>
-    //                 <div class="ps-3 pe-3">
-    //                     <p class="font-color-black-grey-2 font-h6-responsive">${element.waktu} • ${element.kategori}</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>`;
-    //     getid.innerHTML = getid.innerHTML + htmlContent;
-    // }
+const renderMainContentWithFilterKategori = (_kategori = "") => {
+    // example kategori = "Ekonomi"
+    setScrollDocument(0);
+    struct_obj.magazines_headline_select = "";
+    const getid = document.getElementById("html-main-content");
+    document.getElementById("html-slide-main-content").style.display = "none";
+    document.getElementById("html-main-content-click-baca").style.display = "none";
+    getid.innerHTML = "";
+
+    for (let index = 0; index < struct_obj.magazines_headline.length; index++) {
+        const element = struct_obj.magazines_headline[index];
+        const magazines = struct_obj.magazines[element];
+        for (let index = 0; index < magazines.length; index++) {
+            const { image, title, penerbit, rating, kategori } = magazines[index];
+            if (kategori == _kategori) {
+                const htmlContent = `<div class="pt-3 ps-3 pe-3">
+                            <div class="card shadow-sm no-border" style="max-height: 140px;">
+                                <div class="row g-0" onclick="renderClickArticle(${index}, '${element}')">
+                                    <div class="col-4">
+                                        <img src="${image}" class="img-fluid rounded-start h-100" alt="..." style="max-height: 138px; max-width: 110px;">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title font-h5-responsive">${title}</h5>
+                                            <p class="card-text font-h6-responsive">${penerbit}</p>
+                                            <p class="card-text text-start font-h6-responsive font-bold" style="position: absolute; bottom: 8px; right: 11;">
+                                                ⭐ ${rating}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                getid.innerHTML = getid.innerHTML + htmlContent;
+            }
+        }
+
+        if ((index + 1) == struct_obj.magazines_headline.length) {
+            getid.children[getid.children.length - 1].classList.add("pb-3");
+            // getid.innerHTML = getid.innerHTML + htmlContent;
+        }
+    }
 };
 
 const renderMenuSidebar = async () => {
-    setScrollDocument(struct_obj.scroll.home);
-    // document.getElementById("html-main-content-click").style.display = "none";
-    // document.getElementById("html-menu-search").style.display = "none";
-    // document.getElementById("html-main-content").style.display = "none";
-    // document.getElementById("html-header-menu").style.display = "none";
-    let kategori = [];
-    const getArrTxtHeadline = Object.keys(struct_obj.articles);
-    const lengthGetArrTxtHeadline = getArrTxtHeadline.length;
-    for (let index = 0; index < lengthGetArrTxtHeadline; index++) {
-        const element = getArrTxtHeadline[index];
-        const arrObjHeadline = struct_obj.articles[element];
-        const lengthArrObjHeadline = arrObjHeadline.length;
-        for (let index = 0; index < lengthArrObjHeadline; index++) {
-            const element2 = arrObjHeadline[index];
-            const txtKategori = element2.kategori;
-            const findKategori = kategori.find((it) => it == txtKategori);
-            findKategori === undefined ? kategori.push(txtKategori) : null;
-            if ((index + 1) == lengthArrObjHeadline) {
-
-            }
-        }
-    }
-
+    setScrollDocument(getScrollDocument());
     const { isConfirmed, value } = await Swal.fire({
         title: 'KATEGORI',
         input: 'select',
-        confirmButtonColor: '#D5382FFE',
+        confirmButtonText: "Cari",
+        cancelButtonText: "Batal",
+        confirmButtonColor: "#D5382FFE",
         inputValue: struct_obj.lastvalue.sidebar,
-        inputOptions: kategori,
-        showCancelButton: true
+        inputOptions: struct_obj.magazines_kategori,
+        showCancelButton: true,
     });
+
     if (isConfirmed === true) {
         struct_obj.lastvalue.sidebar = value;
-        renderMainContentWithFilterKategori(kategori[value]);
+        renderMainContentWithFilterKategori(struct_obj.magazines_kategori[value]);
     }
 };
 
 const renderHeaderMenu = () => {
     const getid = document.getElementById("html-header-menu").children[1].children[0];
-    Object.keys(struct_obj.articles).forEach((it, index) => {
-        getid.innerHTML = getid.innerHTML + `<a class="font-h6-responsive" onclick="renderMainContent('${it}')">${index == 0 ? "BERITA PANAS" : it.toUpperCase()}</a>`;
+    const { magazines_headline, magazines_kategori } = struct_obj;
+    magazines_headline.forEach((it) => {
+        getid.innerHTML = getid.innerHTML + `<a class="font-h7-responsive font-bold" onclick="renderMainContent('${it}')">${it.toUpperCase().replaceAll("_", " ")}</a>`;
+    });
+    magazines_kategori.forEach((it) => {
+        getid.innerHTML = getid.innerHTML + `<a class="font-h7-responsive font-bold" onclick="renderMainContentWithFilterKategori('${it}')">${it.toUpperCase().replaceAll("_", " ")}</a>`;
     });
 };
 
@@ -487,5 +823,5 @@ const textToSpeech = (text = "") => {
 };
 
 (() => {
-    Object.keys(struct_obj.articles).forEach((it) => struct_obj.articles[it].map((it, _index) => { it.index = _index; return it; }));
+    Object.keys(struct_obj.magazines).forEach((it) => struct_obj.magazines[it].map((it, _index) => { it.index = _index; return it; }));
 })();
