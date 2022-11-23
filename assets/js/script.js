@@ -13,29 +13,36 @@ let struct_obj = {
     magazines: {
         untuk_anda: [
             {
-                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/1.jpg",
-                title: "Refleksi Resolusi",
-                spoiler: "Resolusi Tentang Lingkungan Sekitar",
+                image: "./assets/images/magazines/terbaru/History/1/cover_depan.png",
+                title: "Madig Maspion IT",
+                spoiler: "Profil Maspion Group, Universitas Surabaya, dan lain nya",
                 waktu: "01-01-2022 01:00 WIB",
-                kategori: "Politik & Hukum",
-                penerbit: "Peter Paker",
-                rating: "4.1",
+                kategori: "History",
+                penerbit: "Kelompok 1",
+                rating: "5.0",
                 views: [
-                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/1.jpg",
+                    "./assets/images/magazines/terbaru/History/1/cover_depan.png",
+                    "./assets/images/magazines/terbaru/History/1/1.png",
+                    "./assets/images/magazines/terbaru/History/1/2.png",
+                    "./assets/images/magazines/terbaru/History/1/3.png",
+                    "./assets/images/magazines/terbaru/History/1/4.png",
+                    "./assets/images/magazines/terbaru/History/1/5.png",
+                    "./assets/images/magazines/terbaru/History/1/6.png",
+                    "./assets/images/magazines/terbaru/History/1/7.png",
+                    "./assets/images/magazines/terbaru/History/1/8.png",
+                    "./assets/images/magazines/terbaru/History/1/9.png",
+                    "./assets/images/magazines/terbaru/History/1/10.png",
+                    "./assets/images/magazines/terbaru/History/1/11.png",
+                    "./assets/images/magazines/terbaru/History/1/12.png",
+                    "./assets/images/magazines/terbaru/History/1/13.png",
+                    "./assets/images/magazines/terbaru/History/1/14.png",
+                    "./assets/images/magazines/terbaru/History/1/cover_belakang.png",
                 ],
                 comments: [
                     {
-                        nama: "Billy Jake",
+                        nama: "Damar Tri Pamungkas",
                         rating: "5",
-                    },
-                    {
-                        nama: "Zoe Amstrong",
-                        rating: "2",
-                    },
-                    {
-                        nama: "Alexander Braham",
-                        rating: "3",
-                    },
+                    }
                 ]
             },
             {
@@ -117,7 +124,7 @@ let struct_obj = {
         ],
         terpopuler: [
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/5.jpg",
                 title: "Justin Bieber Hard Work",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
@@ -125,11 +132,7 @@ let struct_obj = {
                 penerbit: "Joe Amstrong",
                 rating: "5.0",
                 views: [
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/5.jpg",
                 ],
                 comments: [
                     {
@@ -147,7 +150,7 @@ let struct_obj = {
                 ]
             },
             {
-                image: "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/9.jpg",
                 title: "Justin Bieber Hard Work",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
@@ -155,11 +158,7 @@ let struct_obj = {
                 penerbit: "Joe Amstrong",
                 rating: "5.0",
                 views: [
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
-                    "https://indonesia.go.id/assets/upload/headline/sdgsdkjfhdsh_thumb.jpeg",
+                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/9.jpg",
                 ],
                 comments: [
                     {
@@ -179,7 +178,7 @@ let struct_obj = {
         ],
         terbaru: [
             {
-                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/18.jpg",
+                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/5.jpg",
                 title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
                 spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
                 waktu: "26-10-2021 13:08 WIB",
@@ -197,21 +196,36 @@ let struct_obj = {
                 ]
             },
             {
-                image: "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/16.jpg",
-                title: "Menuju KTT G20, Bali Menggeliat Lagi Lag..",
-                spoiler: "Bagi Presiden Jokowi, penunjukan Bali sebagai tuan rumah KTT G20 adalah tepat. Nusa Dua yang direncanakan menjadi tempat pelaksanaan KTT G20 memiliki reputasi dan pengalaman dalam penyelenggaraan gelaran bertaraf internasional.",
-                waktu: "26-10-2021 13:08 WIB",
-                kategori: "Opini",
-                penerbit: "Peter Paker",
+                image: "./assets/images/magazines/terbaru/History/1/cover_depan.png",
+                title: "Refleksi Resolusi",
+                spoiler: "Madig Maspion IT",
+                waktu: "01-01-2022 01:00 WIB",
+                kategori: "History",
+                penerbit: "Kelompok 1",
                 rating: "5.0",
                 views: [
-                    "https://www.majalah.bogorkab.go.id/ebooks/081517-inovasi-edisi-86/files/mobile/16.jpg",
+                    "./assets/images/magazines/terbaru/History/1/cover_depan.png",
+                    "./assets/images/magazines/terbaru/History/1/1.png",
+                    "./assets/images/magazines/terbaru/History/1/2.png",
+                    "./assets/images/magazines/terbaru/History/1/3.png",
+                    "./assets/images/magazines/terbaru/History/1/4.png",
+                    "./assets/images/magazines/terbaru/History/1/5.png",
+                    "./assets/images/magazines/terbaru/History/1/6.png",
+                    "./assets/images/magazines/terbaru/History/1/7.png",
+                    "./assets/images/magazines/terbaru/History/1/8.png",
+                    "./assets/images/magazines/terbaru/History/1/9.png",
+                    "./assets/images/magazines/terbaru/History/1/10.png",
+                    "./assets/images/magazines/terbaru/History/1/11.png",
+                    "./assets/images/magazines/terbaru/History/1/12.png",
+                    "./assets/images/magazines/terbaru/History/1/13.png",
+                    "./assets/images/magazines/terbaru/History/1/14.png",
+                    "./assets/images/magazines/terbaru/History/1/cover_belakang.png",
                 ],
                 comments: [
                     {
-                        nama: "Billy Jake",
+                        nama: "Damar Tri Pamungkas",
                         rating: "5",
-                    },
+                    }
                 ]
             },
             {
