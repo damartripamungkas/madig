@@ -7,12 +7,10 @@
 ---
 
 ## About The Project 
-This application is designed to create digital magazine website with unique features such as text-to-speech
+This application is designed to create digital magazine websites with unique features such as text-to-speech. This project is a contribution project for the Maspion Madig 2023 competition
 
 ## Target Device
 - ✅ Mobile Phone
-- ❌ Desktop
-- ❌ Tablet
 
 ## License
 Licensed under the [MIT License](./LICENSE).
