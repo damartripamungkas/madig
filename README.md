@@ -6,6 +6,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://github.com/damartripamungkas/madig/blob/main/screnshoot.png?raw=true" style="height: 40rem;"/>
+</p>
+
+---
+
 ## About The Project 
 This application is designed to create digital magazine websites with unique features such as text-to-speech. This project is a contribution project for the Maspion Madig 2023 competition
 
