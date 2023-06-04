@@ -16,7 +16,7 @@
 This application is designed to create digital magazine websites with unique features such as text-to-speech. This project is a contribution project for the Maspion Madig 2023 competition
 
 ## Running Demo
-- Download apk [here](./madig.apk)
+- Download apk [here](https://github.com/damartripamungkas/madig/raw/main/madig.apk)
 - Install apk
 - Done
 
